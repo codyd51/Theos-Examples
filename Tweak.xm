@@ -1,6 +1,7 @@
 %hook SBLockScreenView
-/*
-    - (void)setCustomSlideToUnlockText:(id)unlockText {
+
+- (void)setCustomSlideToUnlockText:(id)unlockText {
+    
     NSString *settingsPath = @"/var/mobile/Library/Preferences/com.phillipt.unlockchanger~prefs.plist";
     NSMutableDictionary *prefs = [[NSMutableDictionary alloc] initWithContentsOfFile:settingsPath];
  
@@ -20,11 +21,6 @@
         
     }
 
-}
-*/
-
-- (void)setCustomSlideToUnlockText:(id)arg1 {
-    %orig(arg1);
 }
 
 %end
