@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = UnlockChanger;
+	cell = PSLinkCell;
+	detail = UnlockChangerListController;
+	icon = UnlockChanger.png;
+	isController = 1;
+	label = UnlockChanger;
+    };
+}

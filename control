@@ -1,0 +1,9 @@
+Package: com.phillipt.unlockchanger
+Name: UnlockChanger
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Simple test tweak (by Phillip Tennen:D which changes your ‘slide to unlock’ text
+Maintainer: Phillip Tennen
+Author: Phillip Tennen
+Section: Tweaks
