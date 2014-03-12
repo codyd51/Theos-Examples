@@ -1,0 +1,9 @@
+Package: com.phillipt.nameChanger
+Name: nameChanger
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Changes Application names to ‘application’
+Maintainer: Phillip Tennen
+Author: Phillip Tennen
+Section: Tweaks

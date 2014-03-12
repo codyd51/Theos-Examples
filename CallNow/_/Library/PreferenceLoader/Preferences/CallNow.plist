@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = CallNow;
+	cell = PSLinkCell;
+	detail = CallNowListController;
+	icon = CallNow.png;
+	isController = 1;
+	label = CallNow;
+    };
+}

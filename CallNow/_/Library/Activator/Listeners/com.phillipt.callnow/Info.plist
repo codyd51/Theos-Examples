@@ -1,0 +1,4 @@
+{title = "CallNow";
+    description = "An awesome Activator listener!";
+    "compatible-modes" = ("springboard", "application", "lockscreen");}
+

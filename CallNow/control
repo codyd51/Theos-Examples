@@ -1,0 +1,9 @@
+Package: com.phillipt.callnow
+Name: CallNow
+Depends: mobilesubstrate, libactivator
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome Activator listener!
+Maintainer: Phillip Tennen
+Author: Phillip Tennen
+Section: Tweaks

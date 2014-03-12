@@ -1,0 +1,10 @@
+Package: com.phillipt.nameChanger
+Name: nameChanger
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Phillip Tennen
+Author: Phillip Tennen
+Section: Tweaks
+Version: 0.0.1-3
+Installed-Size: 16

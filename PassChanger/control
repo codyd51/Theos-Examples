@@ -1,0 +1,9 @@
+Package: com.phillipt.passchanger
+Name: passChanger
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Simple tweak which allows the user to change the ‘Enter Passcode’ text
+Maintainer: Phillip Tennen
+Author: Phillip Tennen
+Section: Tweaks
