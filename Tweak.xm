@@ -22,7 +22,7 @@
     //In this line, we're saying:
     //IF the text string is empty, or:
     //IF the text string is nonexistent, or
-    //IF the 'enabled' key is equal to FALSE or NO (i.e. if the user turned off the tweak,
+    //IF the 'enabled' key is equal to FALSE or NO (i.e. if the user turned off the tweak),
     if([text isEqualToString:@""] || text == nil || ![enabled]) {
         
         
@@ -40,7 +40,7 @@
         //Set the argument unlockText (remember that?) to whatever is in the 'text' string.
         unlockText = text;
         
-        //Then, return the original method. But remember, the argument *now* contains our custom information.
+        //Then, return the original method. But remember, the argument now contains our custom information.
         %orig(unlockText);
         
     }
