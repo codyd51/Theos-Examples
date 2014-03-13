@@ -1,3 +1,4 @@
+/*
 %hook SBApplication
 
 -(id)displayName {
@@ -8,3 +9,4 @@
 
 
 %end
+*/
