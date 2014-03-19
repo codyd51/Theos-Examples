@@ -7,17 +7,19 @@ NSString *wrongPass = nil;
 
 //In this example, we are hijacking the method - (BOOL)attemptDeviceUnlockWithPassword and making it run our own code. This method takes a few arguments, (id)arg1 and (BOOL)arg2, however, you can rename these arguments anything you'd like, such as (id)testName.
 - (BOOL)attemptDeviceUnlockWithPassword:(id)passEntered appRequested:(BOOL)arg2 {
+    // Get the return value of the original method, since it isn't a good idea to run %orig multiple times in a hook
+    BOOL originalValue = %orig;
 
     //IF the original method returned false (remember, the method we're hooking is a bool),
-    if (!%orig) {
+    if (!originalValue) {
         
          //THEN set the string wrongPass (which we defined earlier) to the custom argument 'passEntered'.
         wrongPass = passEntered;
         
     }
         
-    //Then, once you're done with the above, return the original method without modifying it at all.
-    return %orig;
+    //Then, once you're done with the above, return the original method's return value without modifying it at all.
+    return originalValue;
     
 }
 
