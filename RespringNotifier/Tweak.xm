@@ -1,7 +1,7 @@
-//Here, we're telling theos we want to 'hook' the header called SpringBoard. 'Hooking' basically means we want to access this header and modify the methods inside it.
+//Here, using Logos's 'hook' construct to access the SpringBoard class. 'Hooking' basically means we want to access this class and modify the methods inside it.
 %hook SpringBoard
 
-//Now that theos knows we want to hook the header SpringBoard, we can directly 'hijack' SpringBoard's methods and modify them to run out own code instead of their original code.
+//Now that logos knows we want to hook the header SpringBoard, we can directly 'hijack' SpringBoard's methods and modify them to run out own code instead of their original code.
 
 //In this example, we are hijacking the method - (void)applicationDidFinishLaunching and making it run our own code. This method takes an argument, (id)application, however, you can rename the argument anything you'd like, such as (id)testName.
 -(void)applicationDidFinishLaunching:(id)application {
@@ -22,5 +22,5 @@
     [alert1 release];
 
 }
-//This lets theos know we're done hooking this header.
+//This lets logos know we're done hooking this header.
 %end

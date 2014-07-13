@@ -1,7 +1,7 @@
 //This line tells theos we want to include ('import') the Activator library in our project so we can use its features.
 #import "libactivator.h"
 
-//Here, we're making a pseudo-header for CallNow so it can use the Activator library.
+//Here, we're making an interface which conforms to LAListener
 @interface CallNow : NSObject<LAListener> 
 {} 
 @end

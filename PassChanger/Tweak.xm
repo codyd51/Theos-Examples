@@ -1,7 +1,7 @@
 //Before we do anything, let's declare an NSString called wrongPass which we'll use later.
 NSString *wrongPass = nil;
 
-//Here, we're telling theos we want to 'hook' the header SBLockScreenView. 'Hooking' basically means we want to access this header and modify the methods inside it.
+//Here, using Logos's 'hook' construct to access the SpringBoard class. 'Hooking' basically means we want to access this class and modify the methods inside it.
 %hook SBDeviceLockController
 
 
@@ -23,10 +23,10 @@ NSString *wrongPass = nil;
     
 }
 
-//This lets theos know that we're done hooking this header.
+//This lets logos know that we're done hooking this class.
 %end
 
-//Now, we'll hook the header SBUIPasscodeLockViewWithKeypad. From the name, we can infer that this header is the view we see on the 'Enter Passcode' view.
+//Now, we'll hook the class SBUIPasscodeLockViewWithKeypad. From the name, we can infer that this class is the view we see on the 'Enter Passcode' view.
 %hook SBUIPasscodeLockViewWithKeypad
 
 //Let's hijack the method - (id)statusTitleView, which sets the 'Enter passcode' text.
@@ -54,5 +54,5 @@ NSString *wrongPass = nil;
     
 }
 
-//Tell theos we're done with this header.
+//Tell logos we're done with this header.
 %end
