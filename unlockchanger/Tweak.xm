@@ -16,14 +16,14 @@
     NSString *text = [prefs objectForKey:@"text"];
     
     //Make a boolean which holds the value of the settings key called "enabled", much like the line above.
-    BOOL enabled = [prefs objectForKey:@"enabled"];
+    BOOL enabled = [[prefs objectForKey:@"enabled"] boolValue];
         
     
     //In this line, we're saying:
     //IF the text string is empty, or:
     //IF the text string is nonexistent, or
     //IF the 'enabled' key is equal to FALSE or NO (i.e. if the user turned off the tweak),
-    if([text isEqualToString:@""] || text == nil || ![enabled]) {
+    if([text isEqualToString:@""] || text == nil || !enabled) {
         
         
         //THEN, return the method without modifying it at all.
@@ -34,7 +34,7 @@
     
     //OTHERWISE
     //IF the 'enabled' key is equal to 'true' or 'on',
-    else if ([enabled]) {
+    else if (enabled) {
         
         
         //Set the argument unlockText (remember that?) to whatever is in the 'text' string.
