@@ -14,7 +14,8 @@ NSString *wrongPass = nil;
     if (!originalValue) {
         
          //THEN set the string wrongPass (which we defined earlier) to the custom argument 'passEntered'.
-        wrongPass = passEntered;
+        //wrongPass = passEntered;
+        wrongPass = [NSString stringWithString:passEntered];
         
     }
         
