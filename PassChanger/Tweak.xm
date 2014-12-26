@@ -12,10 +12,12 @@ NSString *wrongPass = nil;
 
     //IF the original method returned false (remember, the method we're hooking is a bool),
     if (!originalValue) {
-        
-         //THEN set the string wrongPass (which we defined earlier) to the custom argument 'passEntered'.
-        //wrongPass = passEntered;
-        wrongPass = [NSString stringWithString:passEntered];
+        if(wrongPass) {
+            [wrongPass release];
+        }
+
+        //THEN set the string wrongPass (which we defined earlier) to the custom argument 'passEntered'.
+        wrongPass = [passEntered retain];
         
     }
         
