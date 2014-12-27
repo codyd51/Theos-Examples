@@ -1,3 +1,6 @@
+#import "substrate.h"
+#import "SpringBoard/SpringBoard.h"
+
 //Before we do anything, let's declare an NSString called wrongPass which we'll use later.
 NSString *wrongPass = nil;
 
