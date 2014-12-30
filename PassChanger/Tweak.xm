@@ -1,3 +1,6 @@
+#import "substrate.h"
+#import "SpringBoard/SpringBoard.h"
+
 //Before we do anything, let's declare an NSString called wrongPass which we'll use later.
 NSString *wrongPass = nil;
 
@@ -12,9 +15,12 @@ NSString *wrongPass = nil;
 
     //IF the original method returned false (remember, the method we're hooking is a bool),
     if (!originalValue) {
-        
-         //THEN set the string wrongPass (which we defined earlier) to the custom argument 'passEntered'.
-        wrongPass = passEntered;
+        if(wrongPass) {
+            [wrongPass release];
+        }
+
+        //THEN set the string wrongPass (which we defined earlier) to the custom argument 'passEntered'.
+        wrongPass = [passEntered retain];
         
     }
         
